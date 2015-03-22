@@ -188,6 +188,11 @@ p {
 
 /* NAVBAR */
 
+.navbar
+{
+   -webkit-backface-visibility: hidden;
+}
+
 .navbar-inverse {
   border-color: #fff;
   background-image: none;
@@ -206,7 +211,7 @@ p {
   color: #fff;
 }
 
-.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.active>a {
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.active>a:focus {
   background-color: white;
   background-image: none;
   -webkit-box-shadow: none;
@@ -221,7 +226,6 @@ p {
   -webkit-box-shadow: none;
   box-shadow: none;
   color: black;
-  
 }
 
 /* HEADER */
@@ -811,7 +815,7 @@ Main components
 
   .cd-timeline-img i{
     left: 22%;
-    top: 35%;
+    top: 40%;
   }
   .cssanimations .cd-timeline-img.is-hidden {
     visibility: hidden;
