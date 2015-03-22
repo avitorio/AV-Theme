@@ -14,16 +14,6 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-// Activate Navbar Item on Section View
-var url = window.location;
-// Will only work if string in href matches with location
-$('.nav li a[href="'+ url +'"]').parent().addClass('active');
-
-// Will also work for relative and absolute hrefs
-$('.nav li a').filter(function() {
-    return this.href == url;
-}).parent().addClass('active');
-
 // Show navbar only after the first Section
 (function ($) {
   $(document).ready(function(){
