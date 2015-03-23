@@ -186,6 +186,31 @@ p {
     animation-name: fadeIn;
   }
 
+/* Global Elements */
+
+/* Link Button */
+.link-button {
+  float: right;
+  padding: .8em 1em;
+  background: rgb(102, 204, 153);
+  color: white;
+  border-radius: 0.25em;
+  -webkit-animation:bg-color-anim 10s linear infinite;
+  -moz-animation:bg-color-anim 10s linear infinite;
+  transition: all 0.3s ease-in-out;
+}
+
+.link-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.link-button:focus {
+  color: white;
+  text-decoration: underline;
+}
+
 /* NAVBAR */
 
 .navbar
@@ -903,27 +928,15 @@ Main components
   clear: both;
 }
 
-.cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+.cd-timeline-content .link-button, .cd-timeline-content .cd-date {
   display: inline-block;
 }
 
-.cd-timeline-content .cd-read-more {
+.cd-timeline-content .link-button {
   float: right;
-  padding: .8em 1em;
-  background: rgb(102, 204, 153);
-  color: white;
-  border-radius: 0.25em;
-  -webkit-animation:bg-color-anim 10s linear infinite;
-  -moz-animation:bg-color-anim 10s linear infinite;
-  transition: all 0.3s ease-in-out;
 }
 
-.cd-timeline-content .cd-read-more:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
-}
-
-.no-touch .cd-timeline-content .cd-read-more:hover {
+.no-touch .cd-timeline-content .link-button:hover {
   background-color: #bac4cb;
 }
 .cd-timeline-content .cd-date {
@@ -943,7 +956,7 @@ Main components
 }
 @media only screen and (min-width: 768px) {
 
-  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  .cd-timeline-content .link-button .cd-timeline-content .cd-date {
     font-size: 14px;
   }
 }
@@ -960,7 +973,7 @@ Main components
     border-color: transparent;
     border-left-color: #000;
   }
-  .cd-timeline-content .cd-read-more {
+  .cd-timeline-content .link-button {
     float: left;
   }
   .cd-timeline-content .cd-date {
@@ -980,7 +993,7 @@ Main components
     border-color: transparent;
     border-right-color: #000;
   }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
+  .cd-timeline-block:nth-child(even) .cd-timeline-content .link-button {
     float: right;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {

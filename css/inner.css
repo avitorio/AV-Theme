@@ -103,7 +103,7 @@ header {
   height: 100%;
   top: 0;
   left: 0;
-  padding-top: 30px;
+  padding: 40px 20px;
   background: #ffffff;
   background-color: #fafafa;
   z-index: 103;
@@ -116,7 +116,8 @@ header {
   transition: all 0.5s ease-in-out; }
   .port img {
     width: 100%;
-    padding: 12px 10px; }
+    margin: 12px 0;
+    border: solid 1px #C8C8C8; }
   .port .crop {
     overflow: hidden;
     background: #599fdd;
