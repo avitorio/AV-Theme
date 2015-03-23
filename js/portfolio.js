@@ -10,6 +10,13 @@
      return false;
  });
 
+$(document).click(function(event) { 
+    if(!$(event.target).closest('.port').length) {
+        $('.port, .gallery ul').removeClass('item_open');
+        return false;
+    }        
+})
+
  $(".gallery ul li a").click(function() {
      $('html, body').animate({
          scrollTop: parseInt($("#top").offset().top)
