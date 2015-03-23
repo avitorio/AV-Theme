@@ -63,9 +63,14 @@ header
 
 // PROJECTS
 .gallery
-    padding: 0px 0 50px
     position: relative
     overflow: hidden
+
+    &.gallery-height
+        padding: 0px 0 50px
+
+        @media screen and (max-width: 375px)
+            height: 600px
 
     ul
         padding-top: 0px
@@ -129,10 +134,13 @@ header
     background-color: #fafafa
     z-index: 103
     visibility: hidden
-    -webkit-transform: translateY(-100%)
-    transform: translateY(-100%)
+    -webkit-transform: translateY(-150%)
+    transform: translateY(-150%)
     border-bottom: 1px solid #d0d0d0
     +transition(all, 0.5s, ease-in-out)
+
+    @media screen and (max-width: 375px)
+        padding: 40px 0
 
     img
         width: 100%
@@ -142,7 +150,6 @@ header
     .crop
         overflow: hidden
         background: #599fdd
-        margin: 10px
         padding: 10px 10px 5px
 
     video
@@ -179,9 +186,6 @@ header
         -webkit-transition-delay: 0.5s
         transition-delay: 0.5s
 
-
-
-
 .close
     width: 21px
     height: 21px
@@ -198,4 +202,7 @@ header
         top: 10px
         right: 10px
         +transition(all, 0.3s, ease-in-out)
+
+    
+
 

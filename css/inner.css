@@ -49,9 +49,13 @@ header {
     padding-top: 30px; }
 
 .gallery {
-  padding: 0px 0 50px;
   position: relative;
   overflow: hidden; }
+  .gallery.gallery-height {
+    padding: 0px 0 50px; }
+    @media screen and (max-width: 375px) {
+      .gallery.gallery-height {
+        height: 600px; } }
   .gallery ul {
     padding-top: 0px;
     position: relative;
@@ -108,12 +112,15 @@ header {
   background-color: #fafafa;
   z-index: 103;
   visibility: hidden;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-150%);
+  transform: translateY(-150%);
   border-bottom: 1px solid #d0d0d0;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
+  @media screen and (max-width: 375px) {
+    .port {
+      padding: 40px 0; } }
   .port img {
     width: 100%;
     margin: 12px 0;
@@ -121,7 +128,6 @@ header {
   .port .crop {
     overflow: hidden;
     background: #599fdd;
-    margin: 10px;
     padding: 10px 10px 5px; }
   .port video {
     width: 125%;
