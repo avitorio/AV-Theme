@@ -1216,7 +1216,7 @@ Main components
   opacity: 1;
 }
 
-.contact-box input:invalid {
+.contact-box input:invalid, textarea:invalid {
   box-shadow: none;
 }
 
