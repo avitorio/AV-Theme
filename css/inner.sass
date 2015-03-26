@@ -35,9 +35,9 @@
         padding: 0
         margin: 0
 
-    a
+    li
 
-        background: gray
+        background: #000
 
 
 %col
@@ -116,15 +116,6 @@ header
                     top: 50%
                     opacity: 1
 
-                &:after
-                    position: absolute
-                    width: 100%
-                    top: 0
-                    bottom: 0
-                    background: rgba(0, 0, 0, 0.3)
-                    content: ''
-                    opacity: 0
-                    @include transition(all, 0.3s, linear)
 
                 &:hover:after
                     opacity: 1

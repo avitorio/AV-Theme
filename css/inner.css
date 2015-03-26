@@ -27,8 +27,8 @@
     height: auto;
     padding: 0;
     margin: 0; }
-  .row a {
-    background: gray; }
+  .row li {
+    background: #000; }
 
 .gallery ul li {
   float: left; }
@@ -94,17 +94,6 @@ header {
         .gallery ul li a:hover:before {
           top: 50%;
           opacity: 1; }
-        .gallery ul li a:after {
-          position: absolute;
-          width: 100%;
-          top: 0;
-          bottom: 0;
-          background: rgba(0, 0, 0, 0.3);
-          content: "";
-          opacity: 0;
-          -webkit-transition: all 0.3s linear;
-          -moz-transition: all 0.3s linear;
-          transition: all 0.3s linear; }
         .gallery ul li a:hover:after {
           opacity: 1; }
 
