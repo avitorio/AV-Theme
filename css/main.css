@@ -247,7 +247,7 @@ p {
   transition: background .3s ease-in-out;
 }
 
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav>li>a:hover {
   background-color: white;
   background-image: none;
   -webkit-box-shadow: none;
@@ -1137,7 +1137,7 @@ Main components
 
 /* Contact Area */
 #contact {
-  background: rgb(102, 204, 153)
+  background: #000
 }
 
 #contact .section-title {
@@ -1156,7 +1156,6 @@ Main components
   display: block;
   border: none;
   transition: all 0.3s ease;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 95%, rgb(102, 102, 204) 5%);
   background-position: -200px 0;
   background-size: 200px 100%;
   background-repeat: no-repeat;
@@ -1178,9 +1177,15 @@ Main components
 }
 
 .contact-box textarea {
-  height:200px;
   max-width:100%;
   resize:none;
+  border-bottom: solid 1px rgb(102, 102, 204);
+  transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+  background-image: -webkit-linear-gradient(bottom, rgb(102, 102, 204) 4px, rgba(255,255,255,0) 4px);
+  background-image: -moz-linear-gradient(bottom, rgb(102, 102, 204) 4px, rgba(255,255,255,0) 4px);
+  background-image: -o-linear-gradient(bottom, rgb(102, 102, 204) 4px, rgba(255,255,255,0) 4px);
+  background-image: -ms-linear-gradient(bottom, rgb(102, 102, 204) 4px, rgba(255,255,255,0) 4px);
+  background-image: linear-gradient(bottom, rgb(102, 102, 204) 4px, rgba(255,255,255,0) 4px);
 }
 .contact-box input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKit browsers */
   color:    white;
@@ -1190,16 +1195,39 @@ Main components
   opacity: 1;
 }
 .contact-box input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #909;
-   opacity:  1;
+  color:    white;
+  font-size: 50px;
+  height: 100px;
+  padding: 0 0 100px 0;
+  opacity: 1;
 }
 .contact-box input:::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #909;
-   opacity:  1;
+  color:    white;
+  font-size: 50px;
+  height: 100px;
+  padding: 0 0 100px 0;
+  opacity: 1;
 }
 .contact-box input::-ms-input-placeholder { /* Internet Explorer 10+ */
-   color:    #909;
+  color:    white;
+  font-size: 50px;
+  height: 100px;
+  padding: 0 0 100px 0;
+  opacity: 1;
 }
+
+.contact-box input:invalid {
+  box-shadow: none;
+}
+
+.contact-box input:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+.contact-box input:-moz-ui-invalid {
+  box-shadow:none;
+}
+
 .contact-box input:focus, input:valid, textarea:focus, textarea:valid {
   box-shadow: none;
   outline: none;
@@ -1208,6 +1236,15 @@ Main components
   font-size: 50px;
   padding: 0;
 }
+
+
+.contact-box input:focus::-moz-placeholder, input:valid::-moz-placeholder {
+  color: rgb(102, 102, 204);
+  font-size: 20px;
+  transform: translateY(-20px);
+  visibility: visible !important;
+}
+
 .contact-box input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
   color: rgb(102, 102, 204);
   font-size: 20px;
@@ -1240,7 +1277,7 @@ button:hover {
 /* FOOTER */
 
 footer {
-  background-color:#d34c65;
+  background-color: rgb(253, 79, 144);
   text-align:center;
 }
 
