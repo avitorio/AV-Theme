@@ -204,6 +204,7 @@ p {
   transform: translateY(-3px);
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
   color: white;
+  background: rgb(102, 204, 153);
 }
 
 .link-button:focus {
@@ -263,6 +264,13 @@ p {
 #header {
   font-family: 'Rajdhani', sans-serif;
   color: #fff;
+  background-image: url(../img/bg-1.jpg)no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+  background-color: rgb(102, 204, 153);
 }
 
 
@@ -1137,7 +1145,8 @@ Main components
 
 /* Contact Area */
 #contact {
-  background: #000
+  background: #000;
+  background-color: #000;
 }
 
 #contact .section-title {
@@ -1152,9 +1161,14 @@ Main components
   transition: all 0.3s ease-in-out;
 }
 
+.contact-box h1, input::-moz-input-placeholder, button {
+  transition: all 0.3s ease-in-out;
+}
+
 .contact-box {
   display: block;
   border: none;
+  -moz-transition: all 0.3s ease;;
   transition: all 0.3s ease;
   background-position: -200px 0;
   background-size: 200px 100%;
@@ -1174,11 +1188,23 @@ Main components
   background-position: -740px 0;
   background-size: 100%;
   background-repeat: no-repeat;
+  font-size: 20px;
+  color: red;
+}
+
+@-moz-document url-prefix() {
+    .contact-box input, textarea {
+      padding: 0px;
+      height: 70px;
+      transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+    }
 }
 
 .contact-box textarea {
   max-width:100%;
+  min-height: 164px;
   resize:none;
+  font-size: 50px;
   border-bottom: solid 1px rgb(102, 102, 204);
   transition: all 0.3s cubic-bezier(.64,.09,.08,1);
   background-image: -webkit-linear-gradient(bottom, rgb(102, 102, 204) 4px, rgba(255,255,255,0) 4px);
@@ -1194,21 +1220,21 @@ Main components
   padding: 0 0 100px 0;
   opacity: 1;
 }
-.contact-box input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+.contact-box input::-moz-placeholder, textarea::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
   color:    white;
   font-size: 50px;
   height: 100px;
   padding: 0 0 100px 0;
   opacity: 1;
 }
-.contact-box input:::-moz-placeholder { /* Mozilla Firefox 19+ */
+.contact-box input:::-moz-placeholder, textarea:::-moz-placeholder { /* Mozilla Firefox 19+ */
   color:    white;
   font-size: 50px;
   height: 100px;
   padding: 0 0 100px 0;
   opacity: 1;
 }
-.contact-box input::-ms-input-placeholder { /* Internet Explorer 10+ */
+.contact-box input::-ms-input-placeholder, textarea::-ms-input-placeholder { /* Internet Explorer 10+ */
   color:    white;
   font-size: 50px;
   height: 100px;
@@ -1220,11 +1246,11 @@ Main components
   box-shadow: none;
 }
 
-.contact-box input:-moz-submit-invalid {
+.contact-box input:-moz-submit-invalid, textarea:-moz-submit-invalid {
   box-shadow: none;
 }
 
-.contact-box input:-moz-ui-invalid {
+.contact-box input:-moz-ui-invalid, textarea:moz-ui-invalid {
   box-shadow:none;
 }
 
@@ -1232,22 +1258,30 @@ Main components
   box-shadow: none;
   outline: none;
   background-position: 0 0;
-  color:    white;
+  color: white;
   font-size: 50px;
-  padding: 0;
+  padding: 15px 0 5px;
 }
 
+.contact-box input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px black inset;
+    -webkit-text-fill-color: white !important;
+    -webkit-placeholder-fill-color: blue !important;
+}
 
-.contact-box input:focus::-moz-placeholder, input:valid::-moz-placeholder {
+.contact-box input:focus::-moz-placeholder, input:valid::-moz-placeholder, textarea:focus::-moz-placeholder, textarea:valid::-moz-placeholder {
   color: rgb(102, 102, 204);
-  font-size: 20px;
+  font-size: 50px;
+  -webkit-transform: translateY(-20px);
   transform: translateY(-20px);
   visibility: visible !important;
+  padding-bottom: 100px;
 }
 
-.contact-box input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder {
+.contact-box input:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder, textarea:valid::-webkit-input-placeholder {
   color: rgb(102, 102, 204);
   font-size: 20px;
+  -webkit-transform: translateY(-20px);
   transform: translateY(-20px);
   visibility: visible !important;
 }
@@ -1257,28 +1291,49 @@ button {
   background: rgb(102, 102, 204);
   cursor: pointer;
   padding: .8em 1em;
+  font-size: 18px;
   color: white;
   border-radius: 0.25em;
 }
 
 button:focus {
   outline:0;
+  background: rgb(102, 102, 204);
 }
 
 button:hover {
   transform: translateY(-3px);
+  background: rgb(102, 204, 153);
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  opacity: 1;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
 }
 
 .contact-box button {
   width: 200px;
 }
 
+.contact-box .hidden {
+  visibility: hidden;
+}
+
+.contact-box .success {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.contact-box .error {
+  color: red;
+}
+
 /* FOOTER */
 
 footer {
   background-color: rgb(253, 79, 144);
-  text-align:center;
+  text-align: center;
 }
 
 /* icon container with excessive gradient */

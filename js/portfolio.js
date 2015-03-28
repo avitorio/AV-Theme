@@ -12,7 +12,7 @@
      return false;
  });
 
-$(document).click(function(event) { 
+$('#portfolio').click(function(event) { 
     if(!$(event.target).closest('.port').length) {
         $('.port, .gallery ul').removeClass('item_open');
         $('.gallery').removeClass('gallery-height');
@@ -20,8 +20,8 @@ $(document).click(function(event) {
     }        
 })
 
- $(".gallery ul li a").click(function() {
+ $('.gallery ul li a').click(function() {
      $('html, body').animate({
-         scrollTop: parseInt($("#hope").offset().top)
+         scrollTop: parseInt($('#hope').offset().top)
      }, 400);
  });

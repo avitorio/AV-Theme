@@ -15,8 +15,6 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/ionicons.min.css">
         <link rel="stylesheet" href="css/inner.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
         <!--[if lt IE 8]>
@@ -46,16 +44,17 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div id="header">
+      <!--
       <video autoplay loop poster=" " id="bgvid">
       <source src="video/video08.mp4" type="video/webm">
       <source src="..video/video08.mp4" type="video/mp4">
-      </video>
+      </video> -->
       <div class="container">
         <div class="row-flex text-center">     
-          <h1>andre vitorio</h1>
-          <p>eCommerce. Marketing. Design. Development.</p> 
+          <h1 class="animate-in" data-anim-type="fade-in" data-anim-delay="100">andre vitorio</h1>
+          <p><span class="animate-in" data-anim-type="fade-in" data-anim-delay="450">eCommerce. </span><span class="animate-in" data-anim-type="fade-in" data-anim-delay="850">Marketing. </span><span class="animate-in" data-anim-type="fade-in" data-anim-delay="1450">Design. </span><span class="animate-in" data-anim-type="fade-in" data-anim-delay="2050">Development. </span></p> 
         </div>
-        <a href="#whatido" class="page-scroll">
+        <a href="#whatido">
           <div id="mouse-icon">
             <div id="scroll-wheel">
               <i class="ion-ios-arrow-down arrow" title="Previous" href="javascript:;"></i>
@@ -389,17 +388,18 @@
       <div class="container padding-top padding-bottom">
         <div class="row section-title color-bg">
           <div class="col-sm-8 col-sm-offset-2 text-center">
-              <h1>
-                <small>CONTACT ME</small><br>
-                Hey there!</h1>
+              <h1><small>CONTACT ME</small><br>Hey there!</h1>
               <p>Say hello, I'll get back to you asap</p>
-            </div>
+          </div>
         </div>
         <div class="contact-box col-sm-8 col-sm-offset-2 text-center">
-            <input placeholder="Your name" required="">
-            <input placeholder="Email" required="">
-            <textarea placeholder="Say hi" required=""></textarea>
-            <button>Submit</button>
+          <h1><div id="form-messages"></div></h1>
+          <form id="ajax-contact" method="post" action="mail/mailer.php">
+              <input placeholder="Your Name" type="text" id="name" name="name" required autocomplete="off">
+              <input placeholder="Your Email" type="email" id="email" name="email" required autocomplete="off">
+              <textarea placeholder="Say hello" id="message" name="message" required></textarea>
+              <button type="submit">Submit</button>
+          </form>
         </div>
           <!-- /.row -->
         </div>
@@ -417,11 +417,10 @@
       </div>
     </footer>
     </div> <!-- /container -->        
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+        <script src="js/jquery-2.1.0.min.js"></script>
 
         <script src="js/vendor/bootstrap.js"></script>
-
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <!-- Plugin JavaScript -->
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/theme.js"></script>
@@ -429,6 +428,8 @@
         <script src="js/portfolio.js"></script>
         <script src="js/animations.min.js"></script>
         <script src="js/appear.min.js"></script>
+        <!-- Form Validation -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.47/jquery.form-validator.min.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
