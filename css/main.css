@@ -264,16 +264,8 @@ p {
 #header {
   font-family: 'Rajdhani', sans-serif;
   color: #fff;
-  background-image: url(../img/bg-1.jpg)no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: auto;
-  background-color: rgb(102, 204, 153);
+  background: rgb(102, 204, 153);
 }
-
-
 
 #header h1 {
 	font-size: 100px;
@@ -304,7 +296,7 @@ bottom: 0;
 min-width: 100%;
 min-height: 100%;
 width: auto;
-z-index: -100;
+z-index: 1;
 background: url(https://zippy.gfycat.com/DependableWindyFairybluebird.gif) no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -321,6 +313,7 @@ visibility: hidden;
   min-height: 100%;
   height: 100vh;
   vertical-align: middle;
+  z-index: 2;
 } 
 
 @media (min-width: 768px) {
