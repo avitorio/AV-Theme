@@ -13,13 +13,15 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link rel="stylesheet" href="css/av-icons.css">
         <link rel="stylesheet" href="css/inner.css">
     </head>
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -56,7 +58,7 @@
         <a href="#whatido" class="page-scroll">
           <div id="mouse-icon">
             <div id="scroll-wheel">
-              <i class="ion-ios-arrow-down arrow" title="Previous" href="javascript:;"></i>
+              <div class="icon icon-chevron-down arrow" title="Previous" href="javascript:;"></div>
             </div>
           </div>
         </a>
@@ -75,22 +77,22 @@
       </div>
       <div class="row">
         <div class="col-md-3 skill animate-in" data-anim-type="fade-in-up" data-anim-delay="1500">
-          <div class="text-center"><i class="ion-ios-world-outline marketing"></i></div>
+          <div class="text-center"><i class="icon icon-globe-outline marketing"></i></div>
           <h2>Online Marketing</h2>
           <p>Extensive experience creating and managing online marketing campaigns: SEO, Ads, Retargeting, Content, Email, Video, Affiliates, Analytics and more.</p>
         </div>
         <div class="col-md-3 skill animate-in" data-anim-type="fade-in-up" data-anim-delay="2500">
-          <div class="text-center"><i class="ion-ios-people-outline design"></i></div>
+          <div class="text-center"><i class="icon icon-contact-group-outline design"></i></div>
           <h2>UI/UX Design</h2>
           <p>Creation of beautiful designs for websites and mobile applications based on the latest trends and best usability practices.</p>
        </div>
         <div class="col-md-3 skill animate-in" data-anim-type="fade-in-up" data-anim-delay="3500">
-          <div class="text-center"><i class="ion-ios-arrow-left dev"></i><i class="ion-ios-more dev"></i><i class="ion-ios-arrow-right dev"></i></div>
+          <div class="text-center"><i class="icon icon-chevron-left dev"></i><i class="icon icon-more dev"></i><i class="icon icon-chevron-right dev"></i></div>
           <h2>Development</h2>
           <p>Development of responsive, secure and fast websites and mobile apps for eCommerce, brands, blogs and platforms.</p>
         </div>
         <div class="col-md-3 skill animate-in" data-anim-type="fade-in-up" data-anim-delay="4500">
-          <div class="text-center"><i class="ion-ios-film-outline content"></i></div>
+          <div class="text-center"><i class="icon icon-filmstrip-outline content"></i></div>
           <h2>Content Production</h2>
           <p>High quality text, audio and visual content for blogs, marketing campaigns, social media, video marketing and more.</p>
         </div>
@@ -305,7 +307,7 @@
           <section id="cd-timeline" class="cd-container">
             <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-picture">
-                <i class="ion-ios-lightbulb text-center"></i>
+                <i class="icon icon-lightbulb text-center"></i>
               </div> <!-- cd-timeline-img -->
               <div class="cd-timeline-content">
                 <h2>Harvard Computer Science 50x</h2>
@@ -317,7 +319,7 @@
 
             <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-picture">
-                <i class="ion-ios-briefcase text-center"></i>
+                <i class="icon icon-briefcase text-center"></i>
               </div> <!-- cd-timeline-img -->
 
               <div class="cd-timeline-content">
@@ -330,7 +332,7 @@
 
             <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-picture">
-                <i class="ion-university text-center"></i>
+                <i class="icon icon-mortar-board text-center"></i>
               </div> <!-- cd-timeline-img -->
               <div class="cd-timeline-content">
                 <h2>MSc in International Business</h2>
@@ -342,7 +344,7 @@
 
             <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-picture">
-                <i class="ion-ios-chatbubble text-center"></i>
+                <i class="icon icon-chatbubble text-center"></i>
               </div> <!-- cd-timeline-img -->
 
               <div class="cd-timeline-content">
@@ -355,7 +357,7 @@
 
             <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-picture">
-                <i class="ion-ios-infinite text-center"></i>
+                <i class="icon icon-infinite text-center"></i>
               </div> <!-- cd-timeline-img -->
               <div class="cd-timeline-content">
                 <h2>Everything in Between</h2>
@@ -367,7 +369,7 @@
 
             <div class="cd-timeline-block">
               <div class="cd-timeline-img cd-picture">
-                <i class="ion-ios-flame text-center"></i>
+                <i class="icon icon-flame text-center"></i>
               </div> <!-- cd-timeline-img -->
 
               <div class="cd-timeline-content">
@@ -395,8 +397,7 @@
           <h1><div id="form-messages"></div></h1>
           <form id="ajax-contact" method="post" action="mail/mailer.php">
               <div>
-              <input placeholder="Your Name" type="text" id="name" name="name" required autocomplete="off" oninvalid="this.setCustomValidity('Enter User Name Here')"
-    oninput="setCustomValidity('')">
+              <input placeholder="Your Name" type="text" id="name" name="name" required autocomplete="off" data-errormessage-value-missing="Something's missing" data-errormessage-type-mismatch="Invalid!">
               </div> 
               <div>
               <input placeholder="Your Email" type="email" id="email" name="email" required autocomplete="off">
@@ -417,11 +418,11 @@
     <footer>
       <div class="col-sm-8 col-sm-offset-2 text-center">
         <ul class="social-ul">
-          <li class="social" title="Twitter"><a href="moi.html"><i class="ion-social-twitter"></i></a></li>
-          <li class="social" title="Twitter"><a href="moi.html"><i class="ion-social-linkedin"></i></a></li>
-          <li class="social" title="Google+"><a href="moi.html"><i class="ion-social-github"></i></a></li>
-          <li class="social" title="Linkedin"><a href="moi.html"><i class="ion-social-reddit"></i></a></li>
-          <li class="social" title="Pinterest"><a href="http://www.pinterest.com/julienw5/">&#62226;</a></li>
+          <li class="social" title="Twitter"><a href="moi.html"><i class="icon icon-twitter"></i></a></li>
+          <li class="social" title="Twitter"><a href="moi.html"><i class="icon icon-linkedin"></i></a></li>
+          <li class="social" title="Google+"><a href="moi.html"><i class="icon icon-github"></i></a></li>
+          <li class="social" title="Linkedin"><a href="moi.html"><i class="icon icon-reddit"></i></a></li>
+          <li class="social" title="Linkedin"><a href="moi.html"><i class="icon icon-skype"></i></a></li>
         </ul>
       </div>
       <div class="col-sm-8 col-sm-offset-2 text-center text-footer">
