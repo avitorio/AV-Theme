@@ -394,10 +394,19 @@
         <div class="contact-box col-sm-8 col-sm-offset-2 text-center">
           <h1><div id="form-messages"></div></h1>
           <form id="ajax-contact" method="post" action="mail/mailer.php">
-              <input placeholder="Your Name" type="text" id="name" name="name" required autocomplete="off">
+              <div>
+              <input placeholder="Your Name" type="text" id="name" name="name" required autocomplete="off" oninvalid="this.setCustomValidity('Enter User Name Here')"
+    oninput="setCustomValidity('')">
+              </div> 
+              <div>
               <input placeholder="Your Email" type="email" id="email" name="email" required autocomplete="off">
-              <textarea placeholder="Say hello" id="message" name="message" required></textarea>
+              </div>
+              <div>
+              <textarea placeholder="Say hello" id="message" name="message" title="Please enter only letters (hyphens and spaces may be included)" required></textarea>
+              </div>
+              <div>
               <button type="submit">Submit</button>
+            </div>
           </form>
         </div>
           <!-- /.row -->
@@ -406,13 +415,18 @@
     </section>
   <!-- FOOTER -->
     <footer>
-      <div>
-        <a href="#"><span><i class="ion-ios-infinite"></i></span></a>
-        <a href="#"><span>Twitter</span></a>
-        <a href="#"><span>Google+</span></a>
-        <a href="#"><span>Github</span></a>
-        <a href="#"><span>Dribble</span></a>
-        <a href="#"><span>CodePen</span></a>
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <ul class="social-ul">
+          <li class="social" title="Twitter"><a href="moi.html"><i class="ion-social-twitter"></i></a></li>
+          <li class="social" title="Twitter"><a href="moi.html"><i class="ion-social-linkedin"></i></a></li>
+          <li class="social" title="Google+"><a href="moi.html"><i class="ion-social-github"></i></a></li>
+          <li class="social" title="Linkedin"><a href="moi.html"><i class="ion-social-reddit"></i></a></li>
+          <li class="social" title="Pinterest"><a href="http://www.pinterest.com/julienw5/">&#62226;</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-8 col-sm-offset-2 text-center text-footer">
+        <p>Designed and coded by Andre Vitorio.</p>
+        <p>This template is available for free on Github.</p>
       </div>
     </footer>
     </div> <!-- /container -->        

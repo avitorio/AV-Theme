@@ -8,6 +8,8 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway);
 
 
+
+
 html,
 body {
     height: 100%;
@@ -188,7 +190,8 @@ p {
 
 /* Global Elements */
 
-/* Link Button */
+/* Link Button
+//  ================================================== */
 .link-button {
   float: right;
   padding: .8em 1em;
@@ -212,7 +215,8 @@ p {
   text-decoration: underline;
 }
 
-/* NAVBAR */
+/* NAVBAR
+//  ================================================== */
 
 .navbar
 {
@@ -259,7 +263,8 @@ p {
   transition: background .3s ease-in-out;
 }
 
-/* HEADER */
+/* HEADER
+//  ================================================== */
 
 #header {
   font-family: 'Rajdhani', sans-serif;
@@ -411,8 +416,7 @@ visibility: hidden;
 }
 /* Down Arrow */
 
-/* Thanks to Kevin Haag for this:
-http://codepen.io/khaag/pen/wotBH */
+/* Thanks to Kevin Haag for this: http://codepen.io/khaag/pen/wotBH */
 
 #mouse-icon {
 	width:90px;
@@ -477,16 +481,9 @@ http://codepen.io/khaag/pen/wotBH */
 
 }
 
-
 .arrow:hover {
   font-weight: 400;
-  /*
-  box-shadow: 2px -2px 0 2px white inset;
-  -webkit-box-shadow: 4px -4px white inset;
-  */
 }
-/*
-.arrow-down  { transform:rotate(-45deg) } */
 
 #scroll-wheel{
 	font-size: 50px;
@@ -522,7 +519,8 @@ http://codepen.io/khaag/pen/wotBH */
 
 /* End Down Arrow */
 
-/* What I Do */
+/* What I Do
+//  ================================================== */
 #whatido {
   background-color: #fff;
 }
@@ -606,7 +604,8 @@ http://codepen.io/khaag/pen/wotBH */
       animation-name: fadeInUp;
     }
 
-/*portfolio */
+/* Portfolio
+//  ================================================== */
 
 #portfolio {
   color: white;
@@ -676,21 +675,14 @@ li {
 
 
 
-/* Time line */
+/* Time line
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+   http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
-*/
+//  ================================================== */
 
-/* -------------------------------- 
-
-Modules - reusable parts of our design
-
--------------------------------- */
-#timeline {
-
-}
+/* Modules - reusable parts of our design */
 
 #timeline .section-title h1:after {
   -webkit-animation:bg-color-anim 10s linear infinite;
@@ -710,11 +702,7 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-/* -------------------------------- 
-
-xnugget info 
-
--------------------------------- */
+/* xnugget info */
 .cd-nugget-info {
   text-align: center;
   position: absolute;
@@ -746,11 +734,7 @@ xnugget info
   fill: #718ca1;
 }
 
-/* -------------------------------- 
-
-Main components 
-
--------------------------------- */
+/* Main components */
 
 #cd-timeline {
   position: relative;
@@ -1136,7 +1120,8 @@ Main components
   }
 }
 
-/* Contact Area */
+/* Contact Area
+//  ================================================== */
 #contact {
   background: #000;
   background-color: #000;
@@ -1182,7 +1167,6 @@ Main components
   background-size: 100%;
   background-repeat: no-repeat;
   font-size: 20px;
-  color: red;
 }
 
 @-moz-document url-prefix() {
@@ -1318,29 +1302,79 @@ button:active {
   padding-bottom: 150px;
 }
 
-.contact-box .error {
+.contact-box .error-message {
   color: red;
+  margin: -19px 26px 15px;
+  float: right;
+  position: absolute;
 }
 
-/* FOOTER */
+/* FOOTER
+//  ================================================== */
 
-footer {
+footer{
+  clear: both;
+  height: 5px;
   background-color: rgb(253, 79, 144);
-  text-align: center;
+  padding: 100px 0 120px;
+  padding-left:0;
+  padding-right:0;
+  position: relative;
+  margin-top:200px;
+  bottom:0;
+  width:100%;
+  margin:0 auto;
 }
 
-/* icon container with excessive gradient */
+.text-footer{
+  margin-top: 30px;
+  color: white;
+}
 
-footer div {
+footer ul li a{
+  border: none;
+  color: rgb(102, 102, 204);
+}
+
+footer li:hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-3px);
+  color: rgb(102, 204, 153);
+}
+
+footer a:hover {
+  transition: all 0.3s ease-in-out;
+  color: rgb(102, 204, 153);
+}
+
+.social-ul{
+  margin: 0 auto;
+  margin-top: -140px;
+  padding: 0;
+}
+
+.social {
   display: inline-block;
-  margin: 125px 0;
-  background: -moz-linear-gradient(top, rgba(255,255,255,0) 20%, rgba(211,76,101,1) 70%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%,rgba(255,255,255,0)), color-stop(70%,rgba(211,76,101,1)));
-  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 20%,rgba(211,76,101,1) 70%);
-  background: -o-linear-gradient(top, rgba(255,255,255,0) 20%,rgba(211,76,101,1) 70%);
-  background: -ms-linear-gradient(top, rgba(255,255,255,0) 20%,rgba(211,76,101,1) 70%);
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 20%,rgba(211,76,101,1) 70%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#d34c65',GradientType=0 );
+  width: 80px;
+  height: 80px;
+  margin: 0 10px;
+  line-height: 90px;
+  font-family: Entypo;
+  font-size: 45px;
+  text-align: center;
+  color: rgb(102, 102, 204);
+  border-radius: 50%;
+  background: #000;
+  overflow: hidden;
 }
+
+.social:hover {
+  color: rgb(102, 204, 153);
+  cursor: pointer;
+
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+
+}
+
 
 
