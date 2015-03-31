@@ -1323,7 +1323,7 @@ footer{
   clear: both;
   height: 5px;
   background-color: rgb(253, 79, 144);
-  padding: 100px 0 120px;
+  padding: 40px 0 100px;
   padding-left:0;
   padding-right:0;
   position: relative;
@@ -1349,7 +1349,7 @@ footer li:hover {
   color: rgb(102, 204, 153);
 }
 
-footer a:hover {
+footer a:hover, a:focus, a:active {
   transition: all 0.3s ease-in-out;
   color: rgb(102, 204, 153);
   text-decoration: none;
@@ -1357,7 +1357,7 @@ footer a:hover {
 
 .social-ul{
   margin: 0 auto;
-  margin-top: -140px;
+  margin-top: -78px;
   padding: 0;
 }
 
@@ -1373,6 +1373,21 @@ footer a:hover {
   color: rgb(102, 102, 204);
   border-radius: 50%;
   background: #000;
+  overflow: hidden;
+}
+
+.social {
+  display: inline-block;
+  /* width: 80px; */
+  /* height: 80px; */
+  /* margin: 0 10px; */
+  /* line-height: 100px; */
+  font-family: Entypo;
+  font-size: 45px;
+  text-align: center;
+  color: #000;
+  /* border-radius: 50%; */
+  /* background: #000; */
   overflow: hidden;
 }
 
