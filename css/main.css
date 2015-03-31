@@ -1321,7 +1321,7 @@ button:active {
 /* FOOTER
 //  ================================================== */
 
-footer{
+footer {
   clear: both;
   height: 5px;
   background-color: rgb(253, 79, 144);
@@ -1335,9 +1335,14 @@ footer{
   margin:0 auto;
 }
 
-.text-footer{
-  margin-top: 30px;
+.text-footer {
+  margin-top: 20px;
   color: white;
+}
+
+.text-footer a{
+  text-decoration: underline;
+  color: #fff;
 }
 
 footer ul li a{
