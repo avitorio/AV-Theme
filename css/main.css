@@ -318,6 +318,10 @@ background: url(https://zippy.gfycat.com/DependableWindyFairybluebird.gif) no-re
     height: auto;
 }
 
+#header video::-webkit-media-controls {
+    display:none !important;
+}
+
 #header .container {
   position: relative;
   padding-top: 30%;
