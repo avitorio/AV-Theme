@@ -548,7 +548,7 @@ background: url(https://zippy.gfycat.com/DependableWindyFairybluebird.gif) no-re
 
 .skill i {
 	display: inline-block;
-	font-size: 70px;
+	font-size: 110px;
 	transition: color 0.5s ease;
   color: black;
   display: inline-block;
@@ -565,6 +565,30 @@ background: url(https://zippy.gfycat.com/DependableWindyFairybluebird.gif) no-re
   transition-property: transform;
   margin-left: -15px;
   margin-right: -15px;
+}
+
+.skill p {
+  text-align: justify;
+  font-size: medium;
+}
+
+.skill h2 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .skill i {
+    font-size: 70px;
+  }
+
+  .skill p {
+    font-size: inherit;
+    text-align: inherit;
+  }
+
+  .skill h2 {
+  text-align: inherit;
+  }
 }
 
 .skill .marketing {
