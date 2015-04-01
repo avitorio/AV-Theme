@@ -278,7 +278,7 @@ p {
 
 #header h1 {
 	font-size: 100px;
-	
+  line-height: 95px;
 }
 
 #header .row-flex {
@@ -332,7 +332,6 @@ background: url(https://zippy.gfycat.com/DependableWindyFairybluebird.gif) no-re
 	} 
 
   #header h1 {
-
     font-size: 132px;
   
   }
@@ -341,10 +340,9 @@ background: url(https://zippy.gfycat.com/DependableWindyFairybluebird.gif) no-re
     min-height: 100%;
   }
 
-  #header #mouse-icon {
+  #header #mouse-icon::before {
     visibility: visible;
     padding: 0;
-
   }
 
   #header video#bgvid {
@@ -438,7 +436,6 @@ background: url(https://zippy.gfycat.com/DependableWindyFairybluebird.gif) no-re
 	-moz-transition: all 0.25s ease-in-out;
 	-webkit-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
-  visibility: hidden;
 }
 
 #mouse-icon::before{
@@ -458,6 +455,7 @@ background: url(https://zippy.gfycat.com/DependableWindyFairybluebird.gif) no-re
 	-moz-transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+  visibility: hidden;
 }
 
 #mouse-icon:hover{
@@ -538,6 +536,10 @@ background: url(https://zippy.gfycat.com/DependableWindyFairybluebird.gif) no-re
   }
 }
 
+.skill {
+  padding-bottom: 50px;
+}
+
 .skill i {
 	display: inline-block;
 	font-size: 70px;
@@ -572,7 +574,7 @@ background: url(https://zippy.gfycat.com/DependableWindyFairybluebird.gif) no-re
 }
 
 .skill .content {
-  color: rgb(109, 193, 231);
+  color: rgb(96, 160, 203);
 }
 
 .skill:hover i, .skill:focus i, .skill:active i {
