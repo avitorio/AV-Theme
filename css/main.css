@@ -236,6 +236,10 @@ p {
   -o-animation:bg-color-anim 30s linear infinite;
 }
 
+.navbar-inverse .navbar-toggle {
+  border: none;s
+}
+
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
   color: #fff;
   text-shadow: none;
