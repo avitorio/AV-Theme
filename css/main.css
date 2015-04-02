@@ -1379,9 +1379,8 @@ button:active {
 
 footer {
   clear: both;
-  height: 5px;
   background-color: rgb(253, 79, 144);
-  padding: 40px 0 100px;
+  padding: 40px 0;
   padding-left:0;
   padding-right:0;
   position: relative;
@@ -1403,7 +1402,7 @@ footer {
 
 footer ul li a{
   border: none;
-  color: rgb(102, 102, 204);
+  color: #fff;
 }
 
 footer li:hover {
@@ -1420,47 +1419,51 @@ footer a:hover, a:focus, a:active {
 
 .social-ul{
   margin: 0 auto;
-  margin-top: -78px;
   padding: 0;
 }
-
 .social {
   display: inline-block;
-  width: 80px;
-  height: 80px;
   margin: 0 10px;
-  line-height: 100px;
-  font-family: Entypo;
-  font-size: 45px;
-  text-align: center;
-  color: rgb(102, 102, 204);
-  border-radius: 50%;
-  background: #000;
-  overflow: hidden;
-}
-
-.social {
-  display: inline-block;
-  /* width: 80px; */
-  /* height: 80px; */
-  /* margin: 0 10px; */
-  /* line-height: 100px; */
   font-family: Entypo;
   font-size: 45px;
   text-align: center;
   color: #000;
-  /* border-radius: 50%; */
-  /* background: #000; */
   overflow: hidden;
 }
 
 .social:hover {
   color: rgb(102, 204, 153);
   cursor: pointer;
-
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
-
 }
 
+@media (min-width: 580px) {
+  .social {
+  width: 80px;
+  height: 80px;
+  margin: 0 10px;
+  line-height: 100px;
+  text-align: center;
+  color: rgb(102, 102, 204);
+  border-radius: 50%;
+  background: #000;
+  }
+
+  .social:hover {
+  color: rgb(102, 204, 153);
+  cursor: pointer;
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .social-ul{
+    margin: 0 auto;
+    margin-top: -78px;
+    padding: 0;
+  }
+
+  footer ul li a{
+  border: none;
+  color: rgb(102, 102, 204);
+}
+}
 
 
