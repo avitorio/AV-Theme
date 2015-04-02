@@ -1204,8 +1204,8 @@ li {
 }
 
 .contact-box input, textarea {
-  margin: 22px 25px;
-  width: 93%;
+  margin: 22px 0px;
+  width: 100%; 
   display: block;
   border: none;
   padding: 0 0 45px 0;
@@ -1217,7 +1217,7 @@ li {
   background-repeat: no-repeat;
   font-size: 20px;
 }
-
+  
 @-moz-document url-prefix() {
     .contact-box input, textarea {
       padding: 0px;
@@ -1239,6 +1239,7 @@ li {
   background-image: -ms-linear-gradient(bottom, rgb(102, 102, 204) 4px, rgba(255,255,255,0) 4px);
   background-image: linear-gradient(bottom, rgb(102, 102, 204) 4px, rgba(255,255,255,0) 4px);
 }
+
 .contact-box input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* WebKit browsers */
   color:    white;
   font-size: 50px;
@@ -1312,6 +1313,10 @@ li {
   visibility: visible !important;
 }
 
+.contact-button {
+  padding-top: 30px;
+}
+
 button {
   border: none;
   background: rgb(102, 102, 204);
@@ -1353,9 +1358,20 @@ button:active {
 
 .contact-box .error-message {
   color: red;
-  margin: -19px 26px 15px;
+  margin: -19px 0px 15px;
   float: right;
   position: absolute;
+}
+
+@media (min-width: 758px) {
+  .contact-box input, textarea {
+    margin: 22px 25px;
+    width: 93%;  
+  }
+
+  .contact-box .error-message {
+    margin: -19px 26px 15px;
+  }
 }
 
 /* FOOTER
