@@ -599,10 +599,6 @@ background: url(https://zippy.gfycat.com/DependableWindyFairybluebird.gif) no-re
   }
 }
 
-.skill .marketing {
-  color: rgb(253, 79, 144);
-}
-
 .skill .design {
   color: rgb(102, 204, 153)
 }
@@ -613,6 +609,10 @@ background: url(https://zippy.gfycat.com/DependableWindyFairybluebird.gif) no-re
 
 .skill .content {
   color: rgb(96, 160, 203);
+}
+
+.skill .marketing {
+  color: rgb(253, 79, 144);
 }
 
 .skill:hover i, .skill:focus i, .skill:active i {
