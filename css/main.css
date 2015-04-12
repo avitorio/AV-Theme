@@ -1217,6 +1217,10 @@ li {
   background-size: 100%;
   background-repeat: no-repeat;
   font-size: 20px;
+  /* iOS hack to remove rounded corners */
+  -webkit-appearance: none; 
+  border-radius: 0;
+
 }
   
 @-moz-document url-prefix() {
@@ -1225,6 +1229,10 @@ li {
       height: 70px;
       transition: all 0.3s cubic-bezier(.64,.09,.08,1);
     }
+}
+
+.contact-box textarea, input {
+  
 }
 
 .contact-box textarea {
