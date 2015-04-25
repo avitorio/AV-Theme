@@ -1374,10 +1374,6 @@ button:active {
 }
 
 @media (min-width: 758px) {
-  .contact-box input, textarea {
-    margin: 22px 25px;
-    width: 93%;  
-  }
 
   .contact-box .error-message {
     margin: -19px 26px 15px;
