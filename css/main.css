@@ -1433,7 +1433,6 @@ footer a:hover, a:focus, a:active {
 }
 .social {
   display: inline-block;
-  margin: 0 10px;
   font-family: Entypo;
   font-size: 45px;
   text-align: center;
@@ -1446,22 +1445,21 @@ footer a:hover, a:focus, a:active {
   cursor: pointer;
 }
 
-@media (min-width: 580px) {
+@media (min-width: 480px) {
   .social {
-  width: 80px;
-  height: 80px;
-  margin: 0 10px;
-  line-height: 100px;
-  text-align: center;
-  color: rgb(102, 102, 204);
-  border-radius: 50%;
-  background: #000;
+    width: 80px;
+    height: 80px;
+    line-height: 100px;
+    text-align: center;
+    color: rgb(102, 102, 204);
+    border-radius: 50%;
+    background: #000;
   }
 
   .social:hover {
-  color: rgb(102, 204, 153);
-  cursor: pointer;
-  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+    color: rgb(102, 204, 153);
+    cursor: pointer;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
   }
 
   .social-ul{
@@ -1471,9 +1469,9 @@ footer a:hover, a:focus, a:active {
   }
 
   footer ul li a{
-  border: none;
-  color: rgb(102, 102, 204);
-}
+    border: none;
+    color: rgb(102, 102, 204);
+  }
 }
 
 
