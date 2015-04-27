@@ -1,0 +1,17 @@
+# Created by https://www.gitignore.io
+
+### grunt ###
+# Grunt usually compiles files inside this directory
+dist/
+
+# Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
+.tmp/
+
+# grunt file #
+Gruntfile.js
+
+## node_modules ##
+node_modules/
+
+## image sources ##
+img_src/
