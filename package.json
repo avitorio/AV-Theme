@@ -13,7 +13,8 @@
     "grunt-contrib-jshint": "~0.10.0",
     "grunt-contrib-nodeunit": "~0.4.1",
     "grunt-contrib-uglify": "^0.9.1",
-    "grunt-mkdir": "~0.1.2"
+    "grunt-mkdir": "~0.1.2",
+    "grunt-uncss": "^0.4.2"
   },
   "dependencies": {
     "grunt-responsive-images": "^0.1.6"

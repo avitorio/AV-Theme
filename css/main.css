@@ -235,7 +235,7 @@ p {
 }
 
 .navbar-inverse .navbar-toggle {
-  border: none;s
+  border: none;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
@@ -994,7 +994,6 @@ li {
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     margin-left: 0;
-    padding-top: ;
     padding: 0em 1.6em 1.6em 1.6em;
     width: 45%;
   }
