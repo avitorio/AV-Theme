@@ -21,3 +21,6 @@ css_src/
 
 ## js sources ##
 js_src/
+
+## dist_files
+dist/
