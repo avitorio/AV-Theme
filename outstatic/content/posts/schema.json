@@ -1,6 +1,13 @@
 {
-  "title": "Posts",
-  "slug": "posts",
+  "title": "posts",
   "type": "object",
-  "properties": {}
+  "properties": {
+    "birthday": {
+      "title": "Birthday",
+      "description": "",
+      "required": false,
+      "fieldType": "Date",
+      "dataType": "date"
+    }
+  }
 }
