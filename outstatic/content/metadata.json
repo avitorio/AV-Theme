@@ -1,11 +1,11 @@
 {
-  "commit": "",
-  "generated": "2026-04-01T02:07:06.502Z",
+  "commit": "57f59c02b86ab015b86e3dd0509dc12f5f1777d2",
+  "generated": "2026-04-01T02:09:06.708Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "",
-        "hash": "1265270563",
+        "commit": "57f59c02b86ab015b86e3dd0509dc12f5f1777d2",
+        "hash": "668394304",
         "path": "outstatic/content/posts/adad.mdx"
       },
       "author": {
