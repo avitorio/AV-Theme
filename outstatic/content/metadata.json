@@ -1,0 +1,22 @@
+{
+  "commit": "",
+  "generated": "2026-04-01T02:07:06.502Z",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "",
+        "hash": "1265270563",
+        "path": "outstatic/content/posts/adad.mdx"
+      },
+      "author": {
+        "name": "Andre Vitorio",
+        "picture": "https://avatars.githubusercontent.com/u/1417109?v=4"
+      },
+      "collection": "posts",
+      "publishedAt": "2026-04-01T01:48:53.933Z",
+      "slug": "adad",
+      "status": "draft",
+      "title": "adad"
+    }
+  ]
+}
