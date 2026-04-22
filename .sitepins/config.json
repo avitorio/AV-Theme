@@ -1,0 +1,10 @@
+{
+  "content": "css",
+  "media": "img",
+  "public": "img",
+  "configs": [
+    "package.json"
+  ],
+  "custom-commit": false,
+  "arrangement": []
+}
